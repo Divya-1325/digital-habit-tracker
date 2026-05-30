@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Absolute Chad badge">
+  <circle cx="60" cy="60" r="56" fill="#0f172a" stroke="#fff" stroke-width="6"/>
+  <path d="M33 43l17 12 10-25 10 25 17-12-6 47H39l-6-47z" fill="#facc15" stroke="#a16207" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M39 90h42" stroke="#78350f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="50" cy="58" r="5" fill="#fff7ed"/>
+  <circle cx="70" cy="58" r="5" fill="#fff7ed"/>
+  <path d="M45 76c11 7 19 7 30 0" stroke="#78350f" stroke-width="5" stroke-linecap="round"/>
+</svg>

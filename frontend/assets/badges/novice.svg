@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Novice badge">
+  <circle cx="60" cy="60" r="56" fill="#dbeafe" stroke="#fff" stroke-width="6"/>
+  <circle cx="60" cy="66" r="31" fill="#f8fafc" stroke="#1e3a8a" stroke-width="3"/>
+  <path d="M39 65c9-10 20-15 35-15 7 0 14 2 20 5-7 13-17 23-33 23-10 0-17-4-22-13z" fill="#86efac" stroke="#166534" stroke-width="3"/>
+  <path d="M45 66c14 0 25-4 39-12" fill="none" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 38l7 3 3 7 3-7 7-3-7-3-3-7-3 7-7 3zM79 30l5 2 2 5 2-5 5-2-5-2-2-5-2 5-5 2z" fill="#facc15"/>
+</svg>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Habit Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-page">
+
+<header class="app-header">
+  <div class="header-title">
+    <button id="badgeMenuBtn" class="icon-button hamburger" type="button" aria-label="Open badge menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div>
+    <p class="eyebrow">Habit dashboard</p>
+    <h1>Your Habits</h1>
+    </div>
+  </div>
+  <div class="account-menu">
+    <div class="account-badge" id="accountBadge">
+      <img id="accountBadgeImage" src="assets/badges/clown.svg" alt="">
+    </div>
+    <div class="account-copy">
+      <strong id="usernameDisplay"></strong>
+      <span id="currentBadgeLabel"></span>
+    </div>
+    <button id="logoutBtn" type="button">Logout</button>
+  </div>
+</header>
+
+<div id="sidebarBackdrop" class="sidebar-backdrop"></div>
+<div id="inAppNotificationStack" class="in-app-notification-stack" aria-live="polite"></div>
+
+<aside id="badgeSidebar" class="badge-sidebar" aria-label="Badge progress">
+    <div class="badge-panel-top">
+      <button id="badgeCloseBtn" class="icon-button close-button" type="button" aria-label="Close badge menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="badge-summary">
+      <p class="eyebrow">Badge ID</p>
+      <h2 id="currentBadgeName">Clown</h2>
+      <p id="currentBadgeRequirement">0+ days</p>
+      <strong id="currentBadgeId">BDG-00</strong>
+    </div>
+    <div class="badge-sidebar-heading">
+      <h2>All Badges</h2>
+      <span id="badgeProgressText">0/10</span>
+    </div>
+    <div id="badgeList" class="badge-list"></div>
+</aside>
+
+<main class="dashboard-layout">
+  <section class="habit-editor">
+    <div class="section-heading">
+      <h2 id="habitFormTitle">Add habit</h2>
+      <button id="cancelEditBtn" class="ghost hidden" type="button">Cancel</button>
+    </div>
+
+    <form id="habitForm">
+      <label for="habitInput">Habit name</label>
+      <input type="text" id="habitInput" maxlength="100" required>
+
+      <label for="habitTime">Reminder time</label>
+      <input type="time" id="habitTime" value="08:00" required>
+
+      <label for="habitNotes">Notes</label>
+      <textarea id="habitNotes" rows="4"></textarea>
+
+      <label class="switch-row" for="habitActive">
+        <input type="checkbox" id="habitActive" checked>
+        <span>Reminder active</span>
+      </label>
+
+      <button id="saveHabitBtn" type="submit">Save habit</button>
+    </form>
+
+    <p id="statusMessage" class="status"></p>
+  </section>
+
+  <section class="habit-workspace">
+    <div class="notification-panel">
+      <div class="notification-copy">
+        <h2>Browser notifications</h2>
+        <p id="notificationStatus">Checking notification access...</p>
+        <p id="reminderCheckStatus">Reminder checker has not run yet.</p>
+      </div>
+      <div class="notification-actions">
+        <button id="enableNotificationsBtn" class="ghost" type="button">Enable</button>
+        <button id="checkRemindersBtn" class="ghost" type="button">Check now</button>
+        <button id="testNotificationBtn" class="neutralBtn" type="button">Test</button>
+      </div>
+    </div>
+
+    <div class="date-panel">
+      <div class="date-copy">
+        <h2>Tracking date</h2>
+        <p id="selectedDateLabel">Today</p>
+      </div>
+      <div class="date-actions">
+        <button id="prevDateBtn" class="ghost" type="button">Previous</button>
+        <input type="date" id="trackingDate" aria-label="Tracking date">
+        <button id="todayDateBtn" class="neutralBtn" type="button">Today</button>
+        <button id="nextDateBtn" class="ghost" type="button">Next</button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat">
+        <span>Total</span>
+        <strong id="totalHabits">0</strong>
+      </div>
+      <div class="stat">
+        <span id="doneDateLabel">Done today</span>
+        <strong id="doneToday">0</strong>
+      </div>
+      <div class="stat">
+        <span>Active reminders</span>
+        <strong id="activeReminders">0</strong>
+      </div>
+      <div class="stat">
+        <span id="bestStreakLabel">Best streak</span>
+        <strong id="bestStreak">0</strong>
+      </div>
+    </div>
+
+    <div class="habit-list-header">
+      <h2>Reminders</h2>
+      <button id="refreshBtn" class="ghost" type="button">Refresh</button>
+    </div>
+    <ul id="habitList"></ul>
+
+    <div class="analytics">
+      <h2>Weekly Progress</h2>
+      <canvas id="weeklyChart"></canvas>
+    </div>
+  </section>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

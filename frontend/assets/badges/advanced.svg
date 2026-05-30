@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Advanced badge">
+  <circle cx="60" cy="60" r="56" fill="#ecfccb" stroke="#fff" stroke-width="6"/>
+  <path d="M26 88l28-50 14 25 10-18 18 43H26z" fill="#65a30d" stroke="#365314" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M54 38l8 15H46l8-15zM78 45l6 14H71l7-14z" fill="#f8fafc"/>
+  <path d="M60 24l7 14 16 2-12 10 3 16-14-8-14 8 3-16-12-10 16-2 7-14z" fill="#facc15" stroke="#a16207" stroke-width="3" stroke-linejoin="round"/>
+</svg>

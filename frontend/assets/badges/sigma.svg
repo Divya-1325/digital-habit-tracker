@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Sigma badge">
+  <circle cx="60" cy="60" r="56" fill="#111827" stroke="#fff" stroke-width="6"/>
+  <path d="M31 88h58L61 28 31 88z" fill="#334155" stroke="#94a3b8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M75 43H49l21 17-21 17h28" fill="none" stroke="#e5e7eb" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#38bdf8" stroke-width="2" opacity=".6"/>
+</svg>
